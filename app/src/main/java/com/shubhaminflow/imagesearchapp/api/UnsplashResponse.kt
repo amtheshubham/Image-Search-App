@@ -1,4 +1,7 @@
 package com.shubhaminflow.imagesearchapp.api
 
-class UnsplashResponse {
-}
+import com.shubhaminflow.imagesearchapp.data.UnsplashPhoto
+
+data class UnsplashResponse(
+    val results: List<UnsplashPhoto>
+)

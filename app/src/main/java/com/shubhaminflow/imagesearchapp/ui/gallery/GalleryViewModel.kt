@@ -11,9 +11,9 @@ class GalleryViewModel @ViewModelInject constructor(
     private val repository: UnsplashRepository
 ) : ViewModel() {
 
-    private val currentquery = MutableLiveData("")
+    private val currentquery = MutableLiveData("robots")
 
-    fun searchQuery(query: String) {
+    fun searchPhotos(query: String) {
         currentquery.value = query
     }
 

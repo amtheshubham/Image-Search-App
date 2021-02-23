@@ -8,6 +8,8 @@ import androidx.paging.LoadStateAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.shubhaminflow.imagesearchapp.databinding.UnsplashPhotoLoadStateFooterBinding
 
+//we will pass main adapter's retry() function into this adapter and then invoke it in the bind() method of this class's viewholder
+
 class UnsplashPhotoLoadStateAdapter (private val retry:()->Unit): LoadStateAdapter<UnsplashPhotoLoadStateAdapter.LoadStateViewholder>() {
 
     inner class LoadStateViewholder(private val binding: UnsplashPhotoLoadStateFooterBinding) : RecyclerView.ViewHolder(binding.root) {

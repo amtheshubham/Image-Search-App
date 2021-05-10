@@ -1,4 +1,4 @@
-## An App for searching Images from API build using:
+## An App for searching Images from API built using:
 
 1. Retrofit
 2. Dagger 2
